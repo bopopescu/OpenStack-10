@@ -1,6 +1,6 @@
 #!/bin/bash
-set -e                                                                  #set -e 表示一旦脚本运行错误就报错并停止执行余下命令
-set -o xtrace
+set -e                                                  #set -e 表示一旦脚本运行错误就报错并停止执行余下命令
+set -o xtrace                                           #表示会跟踪脚本的执行过程，有利于调试
 
 TOP_DIR=$(cd $(dirname "$0") && pwd)
 TEMP=`mktemp`; rm -rfv $TEMP >/dev/null; mkdir -p $TEMP;
